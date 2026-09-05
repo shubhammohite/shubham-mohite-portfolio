@@ -13,6 +13,27 @@
   max-width: 780px;
   padding-top: 40px;
   padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  align-items: center;
+  gap: 50px
+}
+.hero-content {
+  min-width: 0;
+}
+
+.hero-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 380px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-left:450px !important;
 }
 
 .hero-eyebrow {
