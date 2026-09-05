@@ -1,0 +1,117 @@
+.certificates-heading {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.certificates-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.certificate-chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  min-width: 220px;
+}
+
+.certificate-chip svg {
+  font-size: 1.2rem;
+  color: var(--accent-cyan-text);
+  flex-shrink: 0;
+}
+
+.certificate-chip-upcoming {
+  opacity: 0.65;
+  border-style: dashed;
+}
+
+.certificate-chip-upcoming svg {
+  color: var(--text-tertiary);
+}
+
+.certificate-name {
+  display: block;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+}
+
+.certificate-issuer {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+}
+.certificate-chip {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 0.3s var(--ease),
+    border-color 0.3s var(--ease),
+    background 0.3s var(--ease);
+}
+
+.certificate-chip:hover {
+  border-color: var(--accent-violet);
+  background: var(--surface-strong);
+}
+
+.certificate-external-icon {
+  margin-left: auto;
+  color: var(--text-tertiary);
+  font-size: 0.95rem !important;
+  transition:
+    color 0.25s var(--ease),
+    transform 0.25s var(--ease);
+}
+
+.certificate-chip:hover .certificate-external-icon {
+  color: var(--accent-cyan-text);
+  transform: translate(2px, -2px);
+}
+
+.certificate-chip-upcoming {
+  cursor: default;
+}
+
+.certificate-chip-upcoming:hover {
+  transform: none;
+  border-color: var(--border);
+  background: var(--surface);
+}
+.certificate-chip {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    transform 0.3s var(--ease),
+    border-color 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
+}
+
+.certificate-chip:hover {
+  border-color: var(--accent-violet);
+  box-shadow: var(--shadow-glass);
+}
+
+.certificate-external-icon {
+  margin-left: auto;
+  font-size: 0.95rem;
+  color: var(--text-tertiary);
+  transition:
+    color 0.25s var(--ease),
+    transform 0.25s var(--ease);
+}
+
+.certificate-chip:hover .certificate-external-icon {
+  color: var(--accent-cyan-text);
+  transform: translate(2px, -2px);
+}

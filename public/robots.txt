@@ -1,0 +1,12 @@
+
+
+# Site is not ready for public search visibility yet.
+# When ready to go live, replace the two lines below with:
+#
+# User-agent: *
+# Allow: /
+#
+# Sitemap: https://shubhammohite.dev/sitemap.xml
+
+User-agent: *
+Disallow: /

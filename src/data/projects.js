@@ -1,0 +1,160 @@
+export const projects = [
+  {
+    id: 'ossr',
+    title: 'OSSR – Online Self Service Responsive',
+    tagline: 'Enterprise self-service platform for energy customers',
+    description:
+      'An enterprise customer self-service portal built to manage account details, smart meter services and customer communication preferences.',
+    longDescription:
+      'OSSR (Online Self Service Responsive) is an enterprise web-based customer self-service platform developed using Angular, JavaScript, HTML, CSS and Bootstrap. The platform includes multiple business features such as Login Enhancement, Smart Meter Exchange and Preference Center. The Login Enhancement phase enabled PPM customers to view their KPN Number within their account details. The Smart Meter Exchange functionality supported the nationwide smart meter replacement program involving more than two million gas and electricity meters. The Preference Center allowed eligible customers to manage their preferred communication methods and profiling permissions.',
+    image: 'ossr',
+    tech: [
+      'Angular',
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'Bootstrap',
+    ],
+    features: [
+      'Customer self-service portal',
+      'KPN Number account management',
+      'Smart Meter Exchange',
+      'Customer communication preferences',
+      'Profiling permission management',
+      'PPM customer support',
+      'Responsive web application',
+    ],
+    github: '',
+    demo: '',
+    year: '2022–2023',
+    featured: true,
+  },
+
+  {
+    id: 'swissre',
+    title: 'Swiss Re – DocuSign & eSignature Platform',
+    tagline: 'Enterprise digital document and signature management platform',
+    description:
+      'An enterprise platform supporting digital signatures, document workflows and incident management through DocuSign, eSignature and DRM modules.',
+    longDescription:
+      'The Swiss Re project included multiple enterprise platforms focused on digital document workflows, electronic signatures and incident management. The DocuSign Portal supported electronic signatures and digital transaction workflows. The eSignature Portal provided functionality for uploading documents, sending signature requests, managing electronic signatures, tracking requests and maintaining audit trails. The DRM Platform provided an incident management dashboard with incident counts, assignments, SLA monitoring and ticket details to help teams monitor ongoing incidents and identify pending or SLA-breaching tickets.',
+    image: 'swissre',
+    tech: [
+      'React',
+      'ReactStrap',
+      '.NET Core',
+      'MVC',
+      'Azure CI/CD',
+    ],
+    features: [
+      'DocuSign integration',
+      'Electronic signature workflows',
+      'Document management',
+      'Signature request tracking',
+      'Audit trail management',
+      'Incident management dashboard',
+      'SLA monitoring',
+      'Azure CI/CD',
+    ],
+    github: '',
+    demo: '',
+    year: '2023–2024',
+    featured: true,
+  },
+
+  {
+    id: 'iapply',
+    title: 'iApply Job Portal',
+    tagline: 'Role-based recruitment and job application platform',
+    description:
+      'A web-based job portal where users can discover and apply for jobs, with separate visitor, subscribed-user and internal-user workflows.',
+    longDescription:
+      'iApply is a web-based job portal that enables users to apply for jobs through the platform. The application supports three major categories of users: Visitors, Subscribed Users and Internal Users. Visitors can access the portal without login credentials. Subscribed Users register on the platform and gain access after completing the subscription and payment process. Internal Users include Admin Users and Standard Users. Admin Users have extensive portal management capabilities including adding, editing, deleting and approving portal content, as well as managing standard users and external-user status. Standard Users can manage draft content and use the portal chat functionality.',
+    image: 'iapply',
+    tech: [
+      'Angular',
+      'JavaScript',
+      '.NET Core',
+      'SQL Server',
+      'VS Code',
+    ],
+    features: [
+      'Job search and application',
+      'Visitor access',
+      'Subscribed user registration',
+      'Subscription and payment',
+      'Admin user management',
+      'Portal content management',
+      'Standard user workflows',
+      'Draft content management',
+      'Chat functionality',
+    ],
+    github: '',
+    demo: '',
+    year: '2021–2022',
+    featured: true,
+  },
+
+  {
+    id: 'rabdan',
+    title: 'Rabdan Academy – VA Portal & Dynamic CRM',
+    tagline: 'Integrated academic, assessment and CRM portal ecosystem',
+    description:
+      'A web-based portal ecosystem supporting course delivery, assessments, student registration and communication between multiple enterprise platforms.',
+    longDescription:
+      'Rabdan Academy VA Portal and Dynamic CRM is a web-based portal ecosystem designed to support the delivery of courses and assessments to various entities. Entities can register for different courses and assessments for their students. The Short Course System (SCS) stores study materials along with course and assessment information. The Customer Relationship Management (CRM) module is responsible for the overall execution and coordination of the portals. Multiple platforms including the VA Portal, CRM, ERP and SCS are connected and communicate through the CRM.',
+    image: 'rabdan',
+    tech: [
+      'Angular',
+      'JavaScript',
+    ],
+    features: [
+      'Course delivery',
+      'Assessment management',
+      'Student registration',
+      'Short Course System',
+      'Study material management',
+      'Course information management',
+      'CRM integration',
+      'VA Portal integration',
+      'ERP integration',
+      'Cross-portal communication',
+    ],
+    github: '',
+    demo: '',
+    year: '2022',
+    featured: false,
+  },
+
+  {
+    id: 'address-beach',
+    title: 'Address Beach Residences Website',
+    tagline: 'Hospitality and serviced apartments website',
+    description:
+      'A web-based website developed for Address Beach Residences with information and services related to hotel management and serviced apartments.',
+    longDescription:
+      'The Address Beach Residences website was developed as a web-based hospitality website. The platform provides information and services related to hotel management and serviced apartments. The project was developed using WordPress along with HTML, CSS, JavaScript and PHP to create and maintain the website.',
+    image: 'address-beach',
+    tech: [
+      'WordPress',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'PHP',
+    ],
+    features: [
+      'Hospitality website',
+      'Serviced apartment information',
+      'Hotel management services',
+      'Responsive web pages',
+      'WordPress development',
+      'Custom HTML/CSS',
+      'JavaScript functionality',
+      'PHP integration',
+    ],
+    github: '',
+    demo: '',
+    year: '2021',
+    featured: false,
+  },
+];

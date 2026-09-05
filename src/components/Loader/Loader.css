@@ -1,0 +1,48 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.loader-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  color: var(--text-primary);
+}
+
+.loader-bracket {
+  color: var(--accent-cyan-text);
+  font-weight: 600;
+}
+
+.loader-name {
+  font-weight: 500;
+}
+
+.loader-dot {
+  color: var(--accent-violet-text);
+}
+
+.loader-bar-track {
+  width: 180px;
+  height: 2px;
+  background: var(--border);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.loader-bar-fill {
+  height: 100%;
+  width: 100%;
+  background: var(--gradient-primary);
+  transform-origin: left;
+}

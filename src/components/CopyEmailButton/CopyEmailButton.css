@@ -1,0 +1,56 @@
+.copy-email {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  background: var(--surface-strong);
+  border: 1px solid var(--border-strong);
+  padding: 10px 16px;
+  border-radius: var(--radius-pill);
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.copy-email:hover {
+  border-color: var(--accent-violet);
+  transform: translateY(-2px);
+}
+
+.copy-email-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-cyan-text);
+  font-size: 0.95rem;
+}
+
+.copy-email-tooltip {
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gradient-primary);
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.copy-email-compact .copy-email-text {
+  display: none;
+}
+
+.copy-email-compact {
+  padding: 10px;
+}
+
+@media (max-width: 420px) {
+  .copy-email-pill .copy-email-text {
+    display: none;
+  }
+}

@@ -1,0 +1,159 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 18px 0;
+  transition: padding 0.35s var(--ease);
+}
+
+.navbar-scrolled {
+  padding: 10px 0;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 22px;
+  border-radius: var(--radius-pill);
+  max-width: var(--container-w);
+  transition: box-shadow 0.35s var(--ease);
+}
+
+.navbar-scrolled .navbar-inner {
+  box-shadow: var(--shadow-glass);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+.navbar-logo-bracket {
+  color: var(--accent-violet-text);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.navbar-links a {
+  position: relative;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 6px 2px;
+  white-space: nowrap;
+  transition: color 0.25s var(--ease);
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: var(--text-primary);
+}
+
+.navbar-underline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--gradient-primary);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.navbar-burger {
+  display: none;
+  font-size: 1.4rem;
+  color: var(--text-primary);
+}
+
+.navbar-cmdk-hint {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 6px 9px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-strong);
+  border: 1px solid var(--border-strong);
+  color: var(--text-secondary);
+  transition: border-color 0.25s var(--ease), color 0.25s var(--ease);
+}
+
+.navbar-cmdk-hint:hover {
+  border-color: var(--accent-violet);
+  color: var(--text-primary);
+}
+
+.navbar-cmdk-hint kbd {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+@media (max-width: 640px) {
+  .navbar-cmdk-hint {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-burger {
+    display: flex;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 0;
+    padding: 14px;
+    border-radius: var(--radius-md);
+    gap: 4px;
+  }
+
+  .navbar-mobile a {
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 0.98rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+
+  .navbar-mobile a.active {
+    color: var(--text-primary);
+    background: var(--surface-strong);
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-inner {
+    padding: 10px 16px;
+  }
+}

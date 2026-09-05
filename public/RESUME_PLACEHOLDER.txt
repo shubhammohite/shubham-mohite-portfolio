@@ -1,0 +1,5 @@
+Replace this folder's content with your actual resume PDF named:
+resume-shubham-mohite.pdf
+
+The Hero and Resume sections link to /resume-shubham-mohite.pdf for the
+download buttons. Once you add the real PDF here, you can delete this file.
