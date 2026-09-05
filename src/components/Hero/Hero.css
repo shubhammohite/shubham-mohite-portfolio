@@ -177,3 +177,247 @@
     display: none;
   }
 }
+/* =========================================================
+   HERO - MOBILE RESPONSIVE
+   Desktop styles are untouched
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* Main Hero */
+  .hero {
+    min-height: 100vh;
+    padding: 90px 0 50px;
+    overflow: hidden;
+  }
+
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    gap: 35px;
+  }
+
+
+  /* =====================================================
+     HERO CONTENT
+     ===================================================== */
+
+  .hero-content {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /* Eyebrow */
+  .hero-eyebrow {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .hero-dot {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    margin-right: 7px;
+  }
+
+
+  /* Name */
+  .hero-name {
+    width: 100%;
+    font-size: clamp(34px, 9vw, 52px);
+    line-height: 1.12;
+    margin: 0 0 18px;
+    text-align: center;
+  }
+
+  .hero-name .gradient-text {
+    display: inline;
+  }
+
+
+  /* Typing Role */
+  .hero-role {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .hero-role-prompt {
+    margin-right: 6px;
+  }
+
+  .hero-role-text {
+    max-width: calc(100% - 30px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+
+  /* Description */
+  .hero-desc {
+    width: 100%;
+    max-width: 600px;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+
+
+  /* =====================================================
+     CTA BUTTONS
+     ===================================================== */
+
+  .hero-cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 5px;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+    min-height: 50px;
+    justify-content: center;
+  }
+
+
+  /* =====================================================
+     SOCIAL ICONS
+     ===================================================== */
+
+  .hero-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 22px;
+  }
+
+  .hero-social-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-social-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* =====================================================
+     PROFILE IMAGE
+     ===================================================== */
+
+  .hero-image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image {
+    width: min(75vw, 300px);
+    height: min(75vw, 300px);
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  /* =====================================================
+     SCROLL INDICATOR
+     ===================================================== */
+
+  .hero-scroll-indicator {
+    display: none;
+  }
+
+
+  /* =====================================================
+     PREVENT OVERFLOW FROM ANIMATIONS
+     ===================================================== */
+
+  .hero,
+  .hero-inner,
+  .hero-content,
+  .hero-image-section {
+    max-width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 480px
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .hero-inner {
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 30px;
+  }
+
+  .hero-eyebrow {
+    font-size: 12px;
+  }
+
+  .hero-name {
+    font-size: clamp(32px, 10vw, 44px);
+    line-height: 1.1;
+  }
+
+  .hero-role {
+    font-size: 16px;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .hero-image {
+        width: min(70vw, 260px);
+        height: min(70vw, 296px);
+        margin-left: 50px !important;
+  }
+
+  .hero-socials {
+    gap: 14px;
+  }
+
+  .hero-social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+}

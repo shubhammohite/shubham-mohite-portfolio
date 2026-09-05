@@ -1,0 +1,380 @@
+/* =========================================================
+   MOBILE RESPONSIVE STYLES
+   Desktop styles remain completely unchanged.
+   Applies only to screens <= 768px
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* ---------- Global ---------- */
+
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  /* ---------- Container ---------- */
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  /* ---------- Sections ---------- */
+
+  .section {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+
+  /* ---------- Section Header ---------- */
+
+  .section-head {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .section-title {
+    font-size: clamp(30px, 9vw, 42px);
+    line-height: 1.15;
+    margin-bottom: 15px;
+  }
+
+  .section-sub {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* =========================================================
+     NAVBAR / HEADER
+     ========================================================= */
+
+  nav,
+  .navbar,
+  .nav,
+  .header {
+    width: 100%;
+  }
+
+  .nav-container,
+  .navbar-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+
+  /* =========================================================
+     HERO
+     ========================================================= */
+
+  .hero {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .hero-inner {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: clamp(40px, 12vw, 64px);
+    line-height: 1.05;
+    word-break: normal;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  /* =========================================================
+     BUTTONS
+     ========================================================= */
+
+  .btn {
+    min-height: 48px;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+
+  /* =========================================================
+     ABOUT
+     ========================================================= */
+
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+
+  /* =========================================================
+     SKILLS
+     ========================================================= */
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skill-card {
+    width: 100%;
+  }
+
+
+  /* =========================================================
+     PROJECTS
+     ========================================================= */
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-content {
+    padding: 20px;
+  }
+
+
+  /* =========================================================
+     EXPERIENCE
+     ========================================================= */
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .experience-card {
+    width: 100%;
+  }
+
+
+  /* =========================================================
+     CONTACT
+     ========================================================= */
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact-inner {
+    width: 100%;
+  }
+
+  .contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-field {
+    width: 100%;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .form-field textarea {
+    min-height: 130px;
+    resize: vertical;
+  }
+
+  .contact-submit {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-info-item {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .contact-info-value {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+
+  /* =========================================================
+     FOOTER
+     ========================================================= */
+
+  .footer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+
+  /* =========================================================
+     IMAGES
+     ========================================================= */
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  /* =========================================================
+     MOBILE SPACING
+     ========================================================= */
+
+  .glass {
+    max-width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE DEVICES
+   <= 480px
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-sub {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding-top: 85px;
+    padding-bottom: 55px;
+  }
+
+  .hero-title {
+    font-size: clamp(36px, 13vw, 52px);
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .contact-form {
+    padding: 16px;
+  }
+
+  .contact-info-item {
+    padding: 14px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+}
