@@ -12,6 +12,6 @@ export const siteConfig = {
   githubUsername: 'shubhammohite',
   githubUrl: 'https://github.com/shubhammohite',
   linkedinUrl: 'https://www.linkedin.com/in/shubham-mohite-b32a51136/',
-  resumeUrl: '/resume-shubham-mohite.pdf',
+  resumeUrl: '/shubhamM_2026.pdf',
   currentStatus: "Currently seeking new opportunities as an Software Engineer, where I can leverage my expertise to build scalable, high-quality web applications.",
 }
